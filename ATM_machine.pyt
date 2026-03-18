@@ -1,4 +1,4 @@
-print("Welcome to ATM Machine 💳")
+print("Welcome to ATM Machine")
 
 password = 7890
 balance = 1000
@@ -13,7 +13,7 @@ while attempts > 0:
         continue
 
     if pin == password:
-        print("✅ PIN accepted!\n")
+        print("PIN accepted!\n")
 
         while True:
             print("----- ATM Menu -----")
@@ -31,7 +31,7 @@ while attempts > 0:
                 continue
 
             if choice == 1:
-                print(f"💰 Your current balance is: Rs {balance}")
+                print(f"Your current balance is: Rs {balance}")
 
             elif choice == 2:
                 try:
@@ -41,7 +41,7 @@ while attempts > 0:
                     else:
                         balance += deposit
                         transactions.append(f"Deposited Rs {deposit}")
-                        print(f"✅ Deposited Rs {deposit}. New Balance: Rs {balance}")
+                        print(f"Deposited Rs {deposit}. New Balance: Rs {balance}")
                 except ValueError:
                     print("Invalid amount entered.")
 
@@ -55,7 +55,7 @@ while attempts > 0:
                     else:
                         balance -= withdraw
                         transactions.append(f"Withdrew Rs {withdraw}")
-                        print(f"✅ Withdrawn Rs {withdraw}. Remaining Balance: Rs {balance}")
+                        print(f"Withdrawn Rs {withdraw}. Remaining Balance: Rs {balance}")
                 except ValueError:
                     print("Invalid amount entered.")
 
@@ -69,7 +69,7 @@ while attempts > 0:
                 print("--------------------")
 
             elif choice == 5:
-                print("🙏 Thank you for using our ATM. Visit again!")
+                print("Thank you for using our ATM. Visit again!")
                 break
             else:
                 print("Invalid choice. Please enter between 1-5.")
